@@ -1,0 +1,1 @@
+export SECRET_KEY_BASE= (Generate one with rake secret, you can put other environment variables here if you want)

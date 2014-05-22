@@ -2,11 +2,17 @@
 # Dynamic variables here will be compiled to individual files in compiled/attributes.
 attributes:
   environment: production
-  ruby_version: 2.0.0
+  ruby_version: 2.1.2
+  postgres_version: 9.3 #to find config file to update, please make sure this matches your postgres version
+  postgres_user: 
+  postgres_database: 
+  postgres_password: 
+  deploy_user: 
+  app_name: 
 
 # Remote recipes here will be downloaded to compiled/recipes.
 recipes:
-  rvm: https://raw.github.com/kenn/sunzi-recipes/master/ruby/rvm.sh
+  # rvm: https://raw.github.com/kenn/sunzi-recipes/master/ruby/rvm.sh
   # dotdeb: https://raw.github.com/kenn/sunzi-recipes/master/debian/dotdeb-wheezy.sh
   # backports: https://raw.github.com/kenn/sunzi-recipes/master/debian/backports-wheezy.sh
   # mongodb-10gen: https://raw.github.com/kenn/sunzi-recipes/master/debian/mongodb-10gen.sh
@@ -23,7 +29,7 @@ preferences:
 
   # Skip retrieving remote recipes when local copies already exist. This setting helps
   # iterative deploy testing considerably faster, when you have a lot of remote recipes.
-  cache_remote_recipes: false
+  cache_remote_recipes: true
 
   # Evaluate files as ERB templates. When enabled, you can pass dynamic values in the form
   # of <%= @attributes.environment %> in recipes, roles, files and install.sh.
