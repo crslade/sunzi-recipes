@@ -13,8 +13,8 @@ export DEBIAN_FRONTEND=noninteractive
 # source recipes/backports.sh
 
 # Update apt catalog and upgrade installed packages
-#sunzi.mute "apt update"
-#sunzi.mute "apt-get -y upgrade"
+sunzi.mute "apt update"
+sunzi.mute "apt-get -y upgrade"
 
 # Set RAILS_ENV
 environment=<%= @attributes.environment %>

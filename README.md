@@ -15,7 +15,7 @@ You need [sunzi](https://github.com/kenn/sunzi).
 1. Copy your ssh public key into `files/deploy_key`.
 2. Edit `sunzi.yml` with your app name and postgres information.
 3. Make sure it will setup things the way you want.
-4. This script will setup postgres for password authentication, instead of authentication base on the machine's user.
+4. This script will setup postgres for password authentication, instead of authentication based on the machine's user.
 5. Make sure you can ssh to your server with the root account. You might want to copy your ssh public key into /root/.ssh/authorized_keys, so you don't have to type the password.
 6. `sunzi deploy [HOST/IP]`.
 
