@@ -17,7 +17,7 @@ You need [sunzi](https://github.com/kenn/sunzi).
 3. Make sure it will setup things the way you want.
 4. This script will setup postgres for password authentication, instead of authentication base on the machine's user.
 5. Make sure you can ssh to your server with the root account. You might want to copy your ssh public key into /root/.ssh/authorized_keys, so you don't have to type the password.
-6. `sunzi deploy [HOST/IP].
+6. `sunzi deploy [HOST/IP]`.
 
 Next, you can follow a [guide](http://www.talkingquickly.co.uk/2014/01/deploying-rails-apps-to-a-vps-with-capistrano-v3/) by Ben Dixon on how to deploy your app using capistrano.
 
