@@ -7,6 +7,6 @@ else
 	usermod -a -G sudo <%= @attributes.deploy_user %>
 	mkdir /home/<%= @attributes.deploy_user %>/.ssh
 	mv files/deploy_key /home/<%= @attributes.deploy_user %>/.ssh/authorized_keys
-	chown -R deploy:deploy /home/deploy/.ssh
-	chmod 400 /home/deploy/.ssh/authorized_keys
+	chown -R <%= @attributes.deploy_user %>:<%= @attributes.deploy_user %> /home/<%= @attributes.deploy_user %>/.ssh
+	chmod 400 /home/<%= @attributes.deploy_user %>/.ssh/authorized_keys
 fi
